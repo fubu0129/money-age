@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金額計算ページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="amount-page">
+    <div class="container">
+        <h1>金額計算ページ</h1>
+        <p>金額は税込み金額で入力してください。</p>
+        <form id="amount-form">
+            <label for="amount">金額入力:</label>
+            <input type="number" id="amount" placeholder="例: 1000" required>
+            <button type="button" id="addButton">追加</button>
+        </form>
+        <div class="tax-buttons">
+            <button type="button" id="tax8Button">+8% 消費税</button>
+            <button type="button" id="tax10Button">+10% 消費税</button>
+        </div>
+        <div class="results">
+            <h2>計算結果</h2>
+            <p>合計金額: <span id="total">0</span> 円</p>
+            <p>消費税額 (10%): <span id="tax">0</span> 円</p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

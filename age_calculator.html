@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年齢計算ページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="age-page">
+    <div class="container">
+        <h1>年齢計算ページ</h1>
+        <form id="birth-form">
+            <label for="birthdate">生年月日を入力してください:</label>
+            <input type="date" id="birthdate" required>
+            <button type="button" id="calculateButton">計算</button>
+        </form>
+        <div class="results">
+            <h2>計算結果</h2>
+            <p>年齢: <span id="age">-</span> 歳</p>
+            <p>干支: <span id="zodiac">-</span></p>
+            <p>星座: <span id="horoscope">-</span></p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
